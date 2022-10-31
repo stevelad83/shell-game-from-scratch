@@ -2,6 +2,18 @@
 
 [](./assets/shell-game.png)
 
+## HTML Elements
+
+H1
+section
+div
+img _ 6
+button _ 3
+
+section
+div
+span
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
