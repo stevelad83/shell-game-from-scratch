@@ -27,7 +27,7 @@ img {
 }
 
 button {
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     border-radius: 25px;
 }
 
@@ -49,8 +49,4 @@ button {
 
 .stat {
     text-align: center;
-}
-
-button {
-    margin-right: 2rem;
 }

@@ -2,6 +2,7 @@
 const btnOne = document.getElementById('button-one');
 const btnTwo = document.getElementById('button-two');
 const btnThree = document.getElementById('button-three');
+const resetBtn = document.getElementById('reset-button');
 
 const img1 = document.getElementById('image-one');
 const img2 = document.getElementById('image-two');
@@ -63,6 +64,9 @@ btnThree.addEventListener('click', () => {
     showResults();
 });
 
+resetBtn.addEventListener('click', () => {
+    console.log('clicking reset button');
+});
 /* Display Functions */
 
 // (don't forget to call any display functions you want to run on page load!)
