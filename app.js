@@ -19,11 +19,9 @@ let total = 0;
 /* Events */
 
 btnOne.addEventListener('click', () => {
-    console.log('clicking button one!');
     total++;
     resetPearls();
     const hidingPlace = Math.ceil(Math.random() * 3);
-    console.log(hidingPlace);
     if (hidingPlace === 1) {
         wins++;
         img1.classList.add('reveal');
@@ -36,11 +34,9 @@ btnOne.addEventListener('click', () => {
 });
 
 btnTwo.addEventListener('click', () => {
-    console.log('clicking button two!');
     total++;
     resetPearls();
     const hidingPlace = Math.ceil(Math.random() * 3);
-    console.log(hidingPlace);
     if (hidingPlace === 2) {
         wins++;
         img1.classList.add('reveal');
@@ -53,11 +49,9 @@ btnTwo.addEventListener('click', () => {
 });
 
 btnThree.addEventListener('click', () => {
-    console.log('clicking button three!');
     total++;
     resetPearls();
     const hidingPlace = Math.ceil(Math.random() * 3);
-    console.log(hidingPlace);
     if (hidingPlace === 3) {
         wins++;
         img1.classList.add('reveal');
