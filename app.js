@@ -22,8 +22,51 @@ btnOne.addEventListener('click', () => {
     console.log('clicking button one!');
     total++;
     resetPearls();
-    const hidingPLace = Math.ceil(Math.random() * 3);
-    console.log(hidingPLace);
+    const hidingPlace = Math.ceil(Math.random() * 3);
+    console.log(hidingPlace);
+    if (hidingPlace === 1) {
+        wins++;
+        img1.classList.add('reveal');
+    } else if (hidingPlace === 2) {
+        img2.classList.add('reveal');
+    } else {
+        img3.classList.add('reveal');
+    }
+    showResults();
+});
+
+btnTwo.addEventListener('click', () => {
+    console.log('clicking button two!');
+    total++;
+    resetPearls();
+    const hidingPlace = Math.ceil(Math.random() * 3);
+    console.log(hidingPlace);
+    if (hidingPlace === 2) {
+        wins++;
+        img1.classList.add('reveal');
+    } else if (hidingPlace === 1) {
+        img2.classList.add('reveal');
+    } else {
+        img3.classList.add('reveal');
+    }
+    showResults();
+});
+
+btnThree.addEventListener('click', () => {
+    console.log('clicking button three!');
+    total++;
+    resetPearls();
+    const hidingPlace = Math.ceil(Math.random() * 3);
+    console.log(hidingPlace);
+    if (hidingPlace === 3) {
+        wins++;
+        img1.classList.add('reveal');
+    } else if (hidingPlace === 2) {
+        img2.classList.add('reveal');
+    } else {
+        img3.classList.add('reveal');
+    }
+    showResults();
 });
 
 /* Display Functions */
@@ -34,4 +77,10 @@ function resetPearls() {
     img1.classList.remove('reveal');
     img2.classList.remove('reveal');
     img3.classList.remove('reveal');
+}
+
+function showResults() {
+    winsEl.textContent = wins;
+    lossesEl.textContent = total - wins;
+    totalEl.textContent = total;
 }
