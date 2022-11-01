@@ -64,9 +64,6 @@ btnThree.addEventListener('click', () => {
     showResults();
 });
 
-resetBtn.addEventListener('click', () => {
-    console.log('clicking reset button');
-});
 /* Display Functions */
 
 // (don't forget to call any display functions you want to run on page load!)
@@ -82,3 +79,10 @@ function showResults() {
     lossesEl.textContent = total - wins;
     totalEl.textContent = total;
 }
+
+resetBtn.addEventListener('click', () => {
+    wins = 0;
+    total = 0;
+    showResults();
+    resetPearls();
+});
