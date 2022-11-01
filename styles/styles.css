@@ -23,11 +23,11 @@
 
 img {
     max-width: 200px;
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
 }
 
 button {
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     border-radius: 25px;
 }
 
@@ -48,9 +48,5 @@ button {
 }
 
 .stat {
-    padding-right: 5rem;
-}
-
-button {
-    margin-right: 2rem;
+    text-align: center;
 }

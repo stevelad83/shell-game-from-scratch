@@ -2,6 +2,7 @@
 const btnOne = document.getElementById('button-one');
 const btnTwo = document.getElementById('button-two');
 const btnThree = document.getElementById('button-three');
+const resetBtn = document.getElementById('reset-button');
 
 const img1 = document.getElementById('image-one');
 const img2 = document.getElementById('image-two');
@@ -78,3 +79,10 @@ function showResults() {
     lossesEl.textContent = total - wins;
     totalEl.textContent = total;
 }
+
+resetBtn.addEventListener('click', () => {
+    wins = 0;
+    total = 0;
+    showResults();
+    resetPearls();
+});
