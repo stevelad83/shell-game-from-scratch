@@ -23,7 +23,7 @@
 
 img {
     max-width: 200px;
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
 }
 
 button {
@@ -48,7 +48,7 @@ button {
 }
 
 .stat {
-    padding-right: 5rem;
+    text-align: center;
 }
 
 button {
