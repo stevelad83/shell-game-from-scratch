@@ -40,9 +40,9 @@ btnTwo.addEventListener('click', () => {
     const hidingPlace = Math.ceil(Math.random() * 3);
     if (hidingPlace === 2) {
         wins++;
-        img1.classList.add('reveal');
-    } else if (hidingPlace === 1) {
         img2.classList.add('reveal');
+    } else if (hidingPlace === 1) {
+        img1.classList.add('reveal');
     } else {
         img3.classList.add('reveal');
     }
@@ -55,11 +55,11 @@ btnThree.addEventListener('click', () => {
     const hidingPlace = Math.ceil(Math.random() * 3);
     if (hidingPlace === 3) {
         wins++;
-        img1.classList.add('reveal');
+        img3.classList.add('reveal');
     } else if (hidingPlace === 2) {
         img2.classList.add('reveal');
     } else {
-        img3.classList.add('reveal');
+        img1.classList.add('reveal');
     }
     showResults();
 });
